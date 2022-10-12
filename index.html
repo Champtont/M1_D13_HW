@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gotta Do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to your personal Task List!</h1>
+    <br />
+
+    <span
+      >You can add any task you like by writing it in the specified field and
+      then press "Add new task"</span
+    ><br /><br />
+
+    <input type="text" id="newTask" />
+    <input
+      type="button"
+      value="Add new Task"
+      onclick="addNewTask(event)"
+      class="buttonStyle"
+    />
+    <!--space for probs 3&4-->
+    <button onclick="removeLast(event)" class="buttonStyle">
+      Remove Last Task
+    </button>
+    <button onclick="removeFirst(event)" class="buttonStyle">
+      Remove First Task
+    </button>
+    <ul id="myTaskList" class="taskListColor"></ul>
+
+    <hr />
+
+    <input type="color" placeholder="Color" id="colorPicker" />
+    <input type="button" value="Change task background" />
+
+    <hr />
+
+    <input type="button" value="Sort" onclick="bubbleSort()" />
+
+    <script src="index.js"></script>
+  </body>
+</html>

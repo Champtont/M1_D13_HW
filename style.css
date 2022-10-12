@@ -1,0 +1,17 @@
+/*background color for task list*/
+.taskListColor {
+  background-color: gray;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.taskListStyle {
+  border: solid 1pt black;
+  font-weight: bolder;
+  font-size: large;
+  margin-bottom: 0.2em;
+  background-color: aqua;
+}
+.buttonStyle {
+  padding: 0.5em;
+}
