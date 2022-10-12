@@ -1,6 +1,5 @@
 //Temporary Stuff
 //Permanent Stuff
-//window.onload = function () {
 const tasks = document.getElementById("myTaskList");
 const taskInput = document.getElementById("newTask");
 const addButton = document.querySelectorAll("input")[1];
@@ -23,9 +22,14 @@ const removeFirst = function (event) {
 };
 //ex 8:
 const getTasksAsArray = function () {
-  const myTasksArray = document.querySelectorAll("li");
-  for (let i = 0; i < myTasksArray.length; i++) {
-    console.log(myTasksArray);
+  let li = document.querySelectorAll("li");
+  let myArray = [];
+  for (let i = 0; i < li.length; i++) {
+    let piece = li[i].innerText;
+    myArray.push(piece);
   }
+  console.log(myArray);
 };
-//};
+
+//ex 9:
+const changeTaskBackgroundColor = function (event) {};
