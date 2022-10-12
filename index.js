@@ -32,4 +32,6 @@ const getTasksAsArray = function () {
 };
 
 //ex 9:
-const changeTaskBackgroundColor = function (event) {};
+const changeTaskBackgroundColor = (event) => {
+  li.addEventListener("click");
+};
