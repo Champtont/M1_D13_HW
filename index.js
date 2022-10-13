@@ -3,7 +3,6 @@
 const tasks = document.getElementById("myTaskList");
 const taskInput = document.getElementById("newTask");
 const addButton = document.querySelectorAll("input")[1];
-
 //put thing to work
 //ex 5:
 const addNewTask = function (event) {
@@ -32,6 +31,15 @@ const getTasksAsArray = function () {
 };
 
 //ex 9:
-const changeTaskBackgroundColor = (event) => {
-  li.addEventListener("click");
+const colorPicker = document.getElementById("colorPicker");
+const colorChangeButton = document.querySelectorAll("input")[3];
+//console.log(colorPicker.value);
+
+const changeTaskBackgroundColor = () => {
+  const li = document.querySelectorAll("li");
+  const newColor = colorPicker.value;
+  for (let i = 0; i < li.length; i++) {
+    li[i].style.backgroundColor = newColor;
+  }
 };
+colorChangeButton.addEventListener("click", changeTaskBackgroundColor);
